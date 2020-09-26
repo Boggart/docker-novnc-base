@@ -1,5 +1,6 @@
 FROM boggart/s6-ubuntu-base
 ENV AppName=Desktop
+ENV DISPLAY=:0
 COPY base /
 ADD https://ci.appveyor.com/api/buildjobs/u80y8ac9chnrp4dj/artifacts/easy-novnc_linux-64bit /usr/local/bin/easy-novnc
 RUN \

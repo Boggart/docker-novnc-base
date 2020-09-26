@@ -6,4 +6,5 @@ RUN \
   apt-get update && \
   apt-get install -y --no-install-recommends \
   openbox \
-  tigervnc-standalone-server
+  tigervnc-standalone-server && \
+  apt-get clean

@@ -8,4 +8,6 @@ RUN \
   apt-get install -y --no-install-recommends \
   openbox \
   tigervnc-standalone-server && \
-  apt-get clean
+  apt-get clean && \
+  rm -rf /var/lib/apt/lists && \
+  mkdir -p /usr/share/desktop-directories
